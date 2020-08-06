@@ -22,12 +22,29 @@
 
     <section class='jumbotron'>
       <div class='container'>
-        <div class='row'>
-          <h2>Programmer and Movie Jukie</h2>
-          <h3>Python, Java, Visual Basic</h3>
+        <div>
+          <h2 class='row'>Programmer</h2>
+          <h3 class='row'>Python, Java, Visual Basic, C#</h3>
         </div>  
       </div>  
     </section>  
+
+    <section class='container'>
+      <div class='col-sm-6'>
+        <h3>University Blog </h3>
+      </div>
+    </section>
+
+    <section class='jumbotron'>
+      {% for post in posts %}
+        <div class='container'>
+           <h6>Published: {{ post.published_date }}</h6>
+           <h4><a href="">{{ post.title }}</a></h4>
+           <p>{{ post.text|linebreaksbr }}</p>
+           <h2>____________________</h2>
+        </div>
+      {% endfor %}
+    </section>
 
     <footer class='container'>
       <div class='row'>
