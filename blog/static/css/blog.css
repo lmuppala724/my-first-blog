@@ -1,0 +1,164 @@
+body {
+    background-image: url('https://s3.amazonaws.com/codecademy-content/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
+  }
+  
+  header {
+    padding: 10px 0;
+  }
+  
+  header .row,
+  footer .row {
+    display: flex;
+    align-items: center;
+  }
+  
+  header h2 {
+    font-weight: 600;
+    margin: 0;
+    text-align: left;
+    padding-left: 0px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  a {
+    padding: 0 20px;
+    margin: 0;
+  }
+  
+  .jumbotron {
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    color: #30a1b8;
+    text-align: center;
+  }
+
+  #main {
+    background: url('/static/images/uni_main.jpg');
+    background-size: 100% 100%;
+    box-shadow: 10px 10px 5px grey;
+    background-position: center;
+    height: 800px;
+
+  }
+
+  #post h5{
+    font-family: 'Rowdies', cursive;
+   color: #808080;
+  }
+
+  #post h6{
+    font-family: 'Chilanka', cursive;
+  }
+
+  #post p{
+    font-family: 'Baloo Tamma 2', cursive;
+  }
+  
+
+
+  .jumbotron h2 {
+    font-family: 'Lemonada', cursive;
+    font-size: 70px;
+    font-weight: 800;
+    color: #CCFFFF;
+  }
+  
+ .jumbotron h6 {
+  color: #9cc9c6;
+  font-style: italic;
+  font-weight: 600;
+  }
+
+  header h2{
+    font-family: 'Proza Libre', sans-serif;
+  }
+
+  header a{
+    font-family: 'Proza Libre', sans-serif;
+  }
+
+
+  section .row img {
+    margin: 0 0 30px;
+    width: 100%;
+  }
+  
+  
+  .col-md-6 {
+    margin: 0 0 30px;
+  }
+  
+  .btn.btn-primary {
+    border-radius: 2px;
+    border: 0px;
+    color: #0000cc;
+    background-color: #ffffff;
+  }
+  
+  .btn.btn-primary:hover {
+    color: #ffffff;
+    background-color: #fbd1d5;
+  }
+  
+  .btn-secondary {
+    background-color: #174ca1;
+    color: #343488;
+    margin: 0 0 30px;
+  }
+  
+  .portrait {
+    width:  350px;
+    height: 300px;
+  }
+  
+  figure img {
+    width: 100%;
+    height: auto;
+  }
+  
+  figure {
+    margin-bottom: 30px;
+  }
+  
+  footer {
+    font-size: 12px;
+    padding: 20px 0;
+  }
+  
+  footer .col-sm-8 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
+  section div div h5{
+    font-family: Calibri;
+  }
+  
+  section div div h4{
+    font-family: Candara;
+  }
+  
+  section div div ul{
+    font-family: Courier;
+  } 
+  
+  section div div ol{
+    font-family: Courier;
+  }
+  
+  header div h1{
+    font-family: Cambria;
+  }
+  
+  
+  
+  
