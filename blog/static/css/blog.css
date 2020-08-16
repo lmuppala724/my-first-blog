@@ -12,7 +12,7 @@ body {
     align-items: center;
   }
   
-  header h2 {
+  header h3 {
     font-weight: 600;
     margin: 0;
     text-align: left;
@@ -48,15 +48,22 @@ body {
 
   #post h5{
     font-family: 'Rowdies', cursive;
-   color: #808080;
+    color: #808080;
   }
 
   #post h6{
     font-family: 'Chilanka', cursive;
+    color:  #78909c;
   }
 
   #post p{
     font-family: 'Baloo Tamma 2', cursive;
+    position: relative;
+  }
+
+  #post a{
+    color:  #3232CD;
+    
   }
   
 
@@ -65,12 +72,11 @@ body {
     font-family: 'Lemonada', cursive;
     font-size: 70px;
     font-weight: 800;
-    color: #CCFFFF;
+    color:  #CCFFFF ;
   }
   
  .jumbotron h6 {
-  color: #9cc9c6;
-  font-style: italic;
+  color:  #FFFF00;
   font-weight: 600;
   }
 
@@ -137,6 +143,15 @@ body {
   
   footer ul {
     list-style: none;
+  }
+
+  footer p {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  footer a {
+    font-size: 20px;
   }
   
   section div div h5{

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+  <head>
+    <title>Leela's Blog</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&family=Red+Rose&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Proza+Libre:wght@500;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Chilanka&family=Rowdies&display=swap" rel="stylesheet"> 
+  </head>
+
+  <body>
+
+    <header class='container'>
+      <div class='row'> 
+        <h3 class='col-sm-6'> 🧿Leela Muppala🧿</h3>
+        <h4 class='col-sm-6 text-right'>🌈🐘🦋🥭🌷🦚🕸🦥🌳</h4> 
+      </div>  
+    </header>  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <section id='main' class='jumbotron'>
+      <div class='container'>
+        <div>
+          <h2 class='row' >University Blog</h2>
+          <h6 class='row'>“Never put off till tomorrow what you can do the day after tomorrow.” </h6>
+        </div>  
+      </div>  
+    </section>  
+
+    <section id='post'> 
+      {% block content %}
+      {% endblock %}
+    </section>
+
+    <footer class='container'>
+      <div class='row'>
+        <p class='col-sm-4'> &copy 2020 Leela Muppala</p>
+        <div class='col-sm-2 text-right'>
+          <a href='https://github.com/lmuppala724'>Github</a>
+        </div>
+        <div class='col-sm-2'>
+          <a href='https://www.linkedin.com/'>LinkedIn</a>
+        </div>
+      </div>  
+    </footer>  
+
+  </body>
+
+</html>
