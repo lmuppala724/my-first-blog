@@ -3,10 +3,14 @@
 {% block content %}
     <div class="container">
         {% if post.published_date %}
-          <h6>Published: {{ post.published_date }}</h6>
+          <h6>published: {{ post.published_date }}</h6>
+        {% else %}
+          <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
         {% endif %}
+
         {% if user.is_authenticated %}
            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil">📝</span></a>
+           <a class="btn btn-default" href="{% url 'post_remove' pk=post.pk %}"><span class="glyphicon glyphicon-remove">❌</span></a>
         {% endif %}
         
         <h5>{{ post.title }}</h5>
