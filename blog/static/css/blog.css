@@ -65,8 +65,10 @@ body {
     color:  #3232CD;
     
   }
-  
 
+  .comment {
+    margin: 20px 0px 20px 20px;
+  }
 
   .jumbotron h2 {
     font-family: 'Lemonada', cursive;
