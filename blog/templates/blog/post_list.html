@@ -3,12 +3,12 @@
     
     {% block content %}  
       {% for post in posts %}
-        <div class='container'>
+        <div class='container' id='post'>
            <h6>Published: {{ post.published_date }}</h6>
            <h5><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h5>
            <p>{{ post.text|linebreaksbr }}</p>
            <a href="{% url 'post_detail' pk=post.pk %}">Comments: {{ post.approved_comments.count }}</a>
-           <h3>_________________________________</h3>
+           <h3>____________________________________________</h3>
         </div>
       {% endfor %}
     {% endblock %}  

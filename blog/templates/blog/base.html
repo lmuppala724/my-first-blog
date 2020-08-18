@@ -22,6 +22,8 @@
 
   <body>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <div class='page-header row'>
         {% if user.is_authenticated %}
           <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus">➕🤟</span></a>
@@ -37,9 +39,7 @@
         <h3 class='col-sm-6'> 🧿Leela Muppala🧿</h3>
         <h4 class='col-sm-6 text-right'>🌈🐘🦋🥭🌷🦚🦥🌳🐯</h4> 
       </div>  
-    </header>  
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    </header>   
 
     <section id='main' class='jumbotron'>
       <div class='container'>
@@ -50,7 +50,7 @@
       </div>  
     </section>  
 
-    <section id='post'> 
+    <section class="col-sm-8" id='post'> 
       {% block content %}
       {% endblock %}
     </section>
